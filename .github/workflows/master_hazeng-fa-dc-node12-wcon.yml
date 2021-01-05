@@ -7,6 +7,7 @@ on:
   push:
     branches:
       - master
+  workflow_dispatch:
 
 env:
   AZURE_FUNCTIONAPP_PACKAGE_PATH: '.' # set this to the path to your web app project, defaults to the repository root
@@ -40,4 +41,4 @@ jobs:
         app-name: 'hazeng-fa-dc-node12-wcon'
         slot-name: 'production'
         package: ${{ env.AZURE_FUNCTIONAPP_PACKAGE_PATH }}
-        publish-profile: ${{ secrets.AzureAppService_PublishProfile_7622623e963b4c23880c7c2bf659cbd1 }}
+        publish-profile: ${{ secrets.AzureAppService_PublishProfile_ed36657f7ccd4f2e9320e8ee473f23f2 }}
